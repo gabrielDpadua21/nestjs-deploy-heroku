@@ -26,8 +26,8 @@ jobs:
       uses: akhileshns/heroku-deploy@v3.12.12
       with:
         heroku_api_key: ${{ secrets.API_KEY }}
-        heroky_app_name: "nestjs-heroku-exemple"
-        heroku_email: "gabriel.d.padua21@gmail.com"
+        heroku_app_name: ${{ secrets.APP_NAME}} 
+        heroku_email: ${{ secrets.EMAIL}}
         usedocker: true
     
     

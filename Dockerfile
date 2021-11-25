@@ -6,7 +6,7 @@ WORKDIR /home/node
 
 COPY . /home/node/
 
-RUN yarn install && yarn build && yarn install --production
+RUN yarn install --frozen-lockfile && yarn build && yarn install --production
 
 FROM node:14.17-alpine3.11
 

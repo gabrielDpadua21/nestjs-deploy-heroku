@@ -23,7 +23,7 @@ jobs:
     - run: yarn test
       
     - name: deploy to heroky     
-      uses: akhileshns/heroku-deploy@v3.12.12
+      uses: akhileshns/heroku-deploy
       with:
         heroku_api_key: ${{ secrets.API_KEY }}
         heroky_app_name: ${{ secrets.APP_NAME}} 

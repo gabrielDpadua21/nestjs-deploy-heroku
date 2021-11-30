@@ -16,7 +16,7 @@ describe('AppController', () => {
 
   describe('root', () => {
     it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe(
+      expect(appController.getHello().message).toBe(
         'Test deploy vercel with actions 3!!!',
       );
     });
